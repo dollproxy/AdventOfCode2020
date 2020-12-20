@@ -36,7 +36,7 @@ const validationCounterV2 = (passwordChecker) => {
         const password = tokens[2];
 
         if(password[positionOne-1] === toCheckCharacter || password[positionTwo-1] === toCheckCharacter){
-            if(password[positionOne-1] != password[positionTwo-1]){
+            if(password[positionOne-1] !== password[positionTwo-1]){
                 validCounter++;
             }
         }
